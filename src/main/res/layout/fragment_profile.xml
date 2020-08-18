@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.profileFragment">
+
+
+    <ImageView
+        android:id="@+id/imgprofileinside"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/image11"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Name Here"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/imgprofileinside"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/etname"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/etemail"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:maxLength="12"
+        android:inputType="phone"
+        android:textStyle="italic"
+        />
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/etphone"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:maxLines="2"
+        android:inputType="text"
+        />
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Save Details"
+        android:textColor="#000000"
+        android:background="#B43838"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+</RelativeLayout>

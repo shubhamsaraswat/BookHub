@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="#ffffff"
+    android:layout_height="140dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:id="@+id/llcontent"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:weightSum="6">
+    <ImageView
+        android:id="@+id/imgBookImage"
+        android:layout_height="110dp"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_weight="1.5"/>
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3.3">
+        <TextView
+            android:id="@+id/txtBookName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="Name of the book"/>
+        <TextView
+            android:id="@+id/txtBookAuthor"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:textSize="15sp"
+            android:text="Name of the Author"
+            android:layout_below="@id/txtBookName"/>
+        <TextView
+            android:id="@+id/txtBookPrice"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:textColor="#357a38"
+            android:textSize="15sp"
+            android:text="Rs. 299"
+            android:layout_below="@id/txtBookAuthor"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/txtBookRating"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:padding="4dp"
+        android:layout_weight="1.2"
+        android:textColor="#ffca28"
+        android:textSize="15sp"
+        android:text="4.5"
+        android:textStyle="bold"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/ic_rating">
+    </TextView>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
